@@ -1,0 +1,47 @@
+{
+  "name": "geo-analyzer-rb",
+  "version": "1.0.0",
+  "description": "MCP server and Cloudflare Worker for AI search engine optimization using GEO principles",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "dev:worker": "npm run dev --workspace=packages/cloudflare-worker",
+    "dev:mcp": "npm run dev --workspace=packages/mcp-server",
+    "deploy": "npm run deploy --workspace=packages/cloudflare-worker",
+    "publish:mcp": "node scripts/publish-mcp.js",
+    "publish:mcp:minor": "node scripts/publish-mcp.js minor",
+    "publish:mcp:major": "node scripts/publish-mcp.js major"
+  },
+  "keywords": [
+    "mcp",
+    "geo",
+    "ai-search",
+    "optimization",
+    "cloudflare",
+    "jina"
+  ],
+  "author": {
+    "name": "Houtini",
+    "email": "hello@houtini.ai",
+    "url": "https://houtini.ai"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/houtini/geo-analyzer.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,53 @@
+# Ignore dependencies
+node_modules/
+dist/
+build/
+.wrangler/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.dev.vars
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+.cache/
+
+# Test files
+test-*.ps1
+test-*.json
+response.json
+
+# Internal documentation (keep out of git)
+BIAS_FIX_COMPLETE.md
+SECURITY_CLEANUP_COMPLETE.md
+PRODUCTION_READY_SUMMARY.md
+HANDOVER*.md
+OPTION_B*.md
+PROJECT_STATUS.md
+SECURITY-AUDIT.md
+SECURITY-UPDATES.md
+CLEANUP-FINAL.md
+DEPLOY-BUTTON-ANALYSIS.md
+README-OVERHAUL-COMPLETE.md
